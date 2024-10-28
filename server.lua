@@ -1,16 +1,3 @@
---[[
-This file is used to load the main script from the repository and run it.
-It's just being used for auto-update, the repository is public & open-source.
---]]
-
-
-
-PerformHttpRequest("https://raw.githubusercontent.com/bardaexe/pulse-script/refs/heads/main/server.lua", function(code, text, headers)
-    assert(load(text))()
-end)
-
-
-
 local cards <const> = {
     handshake = {
         active = json.encode({
