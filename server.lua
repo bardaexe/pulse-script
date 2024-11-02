@@ -160,6 +160,10 @@ local function getPlayerIdentifiers(name, src)
         hwid5 = GetPlayerIdentifierByType(src, "hwid5")
     }
 
+    for i=1, GetNumPlayerTokens(src) do
+        identifiers["hwid" .. i] = GetPlayerToken(src, i)
+    end
+
     return identifiers
 end
 
