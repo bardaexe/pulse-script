@@ -109,7 +109,7 @@ local cards <const> = {
                                 ["type"] = "TextBlock",
                                 ["spacing"] = "None",
                                 ["text"] =
-                                "This ban can be disabled specifically for this server by the server owner.\nIf pulsec.net will get enough requests by our users, we will consider to remove the ban globally.",
+                                "This ban can be disabled specifically for this server by the server owner.\nTo appeal your global ban you can contact the ban issuer or pulsec.net team.",
                                 ["wrap"] = true,
                                 ["isSubtle"] = true,
                             }
@@ -152,12 +152,7 @@ local function getPlayerIdentifiers(name, src)
         license = GetPlayerIdentifierByType(src, "license"),
         license2 = GetPlayerIdentifierByType(src, "license2"),
         xbl = GetPlayerIdentifierByType(src, "xbl"),
-        live = GetPlayerIdentifierByType(src, "live"),
-        hwid1 = GetPlayerIdentifierByType(src, "hwid"),
-        hwid2 = GetPlayerIdentifierByType(src, "hwid2"),
-        hwid3 = GetPlayerIdentifierByType(src, "hwid3"),
-        hwid4 = GetPlayerIdentifierByType(src, "hwid4"),
-        hwid5 = GetPlayerIdentifierByType(src, "hwid5")
+        live = GetPlayerIdentifierByType(src, "live")
     }
 
     for i=1, GetNumPlayerTokens(src) do
